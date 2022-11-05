@@ -1,8 +1,7 @@
-var vid
 if (window.confirm("attempt to download directly from url?")) {
-  vid = location.href
+  var vid = location.href
 } else {
-  vid = prompt("video url?")
+  var vid = prompt("video url?")
 }
 
 var uri = "https://projectlounge.pw/ytdl/download?url="
